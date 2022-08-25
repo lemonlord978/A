@@ -5,7 +5,7 @@
 */
 /*
 #####################################################################
-#	Nhân qu? không n? chúng ta th? gì, cho nên xin d?ng oán gi?n	#
+#	Nhan qua khong no chúng ta thu gi, cho nen xin dung oan gian	#
 #                                _oo0oo_							#
 #                               088888880							#
 #                               88" . "88							#
@@ -25,8 +25,8 @@
 #           =========='-.____'.___ \_____/___.-'____.-'==========	#
 #       	                    '=---='								#
 #																	#
-#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Ð?c Ph?t noi dây phù h? code con ch?y không Bug. Nam mô a di dà Ph?t
+#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       #
+Duc Phat noi day phu ho code con chay khong Bug. Nam mo a di da Phat.
 */
     
 

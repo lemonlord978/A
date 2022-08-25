@@ -41,8 +41,6 @@ typedef struct
 	int value;
 } Ele;
 
-Ele a;
-
 Ele AddEle(Ele a[], int n){
 	Ele ele1;
 	int i;

@@ -40,19 +40,30 @@ typedef struct
 	int value;
 } Ele;
 
+Ele a;
+
 Ele AddEle(Ele a[], int n){
 	Ele ele1;
 	int i;
 	i=n++;
 	printf("Enter input number %d: ", n);
-	scanf("%d", ele1.value);
+	scanf("%d", &ele1.value);
 	return ele1;
 }
+
+void output(Ele a[], int n){
+	int i;
+	for (i=0; i<n; i++)
+	{
+		printf("Value of position %d is: %d\n", i+1, a[i].value);
+	}
+}
+
 
 int main(){
 	//---KhaiBao---
 	int num;
-	int n;
+	int n,i;
 	Ele a[100];
 	int status,temp;
 	Ele ele1;
@@ -84,6 +95,7 @@ int main(){
         a[n++] = ele1;
 		break;
 		case 2:
+		output(a, n);
 		break;
 		case 3:
 		break;

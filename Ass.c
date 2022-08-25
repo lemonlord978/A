@@ -26,24 +26,43 @@
 #       	                    '=---='								#
 #																	#
 #            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       #
-Duc Phat noi day phu ho code con chay khong Bug. Nam mo a di da Phat.
+Duc Phat noi day phu ho code con chay khong Bug. Nam mo a di da Phat. 
 */
-  
+    
 
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct 
+{
+	int value;
+} Ele;
+
+Ele AddEle(int a[], int n){
+	Ele ele1;
+	int i;
+	i=n++;
+	printf("Enter input number %d: ", n);
+	scanf("%d", ele1.value);
+	return ele1;
+}
+
 int main(){
 	//---KhaiBao---
+	int num;
 	int n;
-	int a[100];
+	Ele a[100];
 	int status,temp;
+	Ele ele1;
 
 	//---Menu---
 	do {
 	printf("********ProVip9000ProgramDesignedByNghiaHoangPhu*********\n");
 	printf("*\t\t1: Add new element.\t\t\t*\n");
-	printf("*\t\t2: Display array.\t\t\t*\n");
-	printf("*\t\t3: Searching element in array.\t\t*\n");
+	printf("*\t\t2: display array.\t\t\t*\n");
+	printf("*\t\t3: searching element in array.\t\t*\n");
 	printf("*\t\t4: Delete value in array.\t\t*\n");
 	printf("*\t\t5: Delete element at index.\t\t*\n");
 	printf("*\t\t6: Delete some elements in range.\t*\n");
@@ -52,15 +71,17 @@ int main(){
 	printf("*\t\t9: Quit.\t\t\t\t*\n");
 	printf("*********************************************************\n");
 	printf("Option: ");
-	status=scanf("%d",&n); 
+	status=scanf("%d",&num); 
 	while(status!=1) {
 	while((temp=getchar())!=EOF&&temp!='\n');
 	printf("Please re-enter your option: ");
-	status = scanf("%d", &n);
+	status = scanf("%d", &num);
 	}
-	switch (n)
+	switch (num)
 	{
 		case 1:
+        ele1 = AddEle(a, n);
+        a[n++] = ele1;
 		break;
 		case 2:
 		break;
@@ -81,7 +102,7 @@ int main(){
 		break;
 	}
 	
-} while(n!=9);
+} while(num!=9);
 
 	return 0;
 }

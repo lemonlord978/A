@@ -40,7 +40,7 @@ typedef struct
 	int value;
 } Ele;
 
-Ele AddEle(int a[], int n){
+Ele AddEle(Ele a[], int n){
 	Ele ele1;
 	int i;
 	i=n++;

@@ -5,7 +5,7 @@
 */
 /*
 #####################################################################
-#	Nhan qua khong no chúng ta thu gi, cho nen xin dung oan gian	#
+#	Nhan qua khong no chung ta thu gi, cho nen xin dung oan gian	#
 #                               _oo0oo_							    #
 #                              088888880							#
 #                              88" . "88							#

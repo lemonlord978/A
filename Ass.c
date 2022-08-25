@@ -7,6 +7,7 @@ int main(){
 	int status,temp;
 	
 	//---Menu---
+	do {
 	printf("*********************************************************\n");
 	printf("*\t\t1: Add new element.\t\t\t*\n");
 	printf("*\t\t2: display array.\t\t\t*\n");
@@ -25,5 +26,22 @@ int main(){
 	printf("Please re-enter your option: ");
 	status = scanf("%d", &n);
 	}
+	switch (n)
+	{
+		case 1:;
+		case 2:;
+		case 3:;
+		case 4:;
+		case 5:;
+		case 6:;
+		case 7:;
+		case 8:;
+		case 9:
+		printf("Quiting...");
+		break;
+	}
+	
+} while(n!=9);
+
 	return 0;
 }

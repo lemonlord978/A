@@ -40,7 +40,7 @@ int main(){
 
 	//---Menu---
 	do {
-	printf("*ProVip*\n");
+	printf("********ProVip9000ProgramDesignedByNghiaHoangPhu*********\n");
 	printf("*\t\t1: Add new element.\t\t\t*\n");
 	printf("*\t\t2: display array.\t\t\t*\n");
 	printf("*\t\t3: searching element in array.\t\t*\n");

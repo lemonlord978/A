@@ -34,6 +34,7 @@ Duc Phat noi day phu ho code con chay khong Bug. Nam mo a di da Phat.
 #include <conio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 typedef struct 
 {
@@ -51,6 +52,7 @@ Ele AddEle(Ele a[], int n){
 	return ele1;
 }
 
+//---InDanhSach---
 void output(Ele a[], int n){
 	int i;
 	for (i=0; i<n; i++)
@@ -59,6 +61,22 @@ void output(Ele a[], int n){
 	}
 }
 
+//---SearchElement---
+void search(Ele* a, int n) {
+	int value;
+	printf("Enter value of element: ");
+	scanf("%d", &value);
+	int i, search = 0;
+	for(i = 0; i < n; i++) {
+		if(value - a[i].value == 0) {
+			printf("Value of position %d is: %d\n", i+1, a[i].value);
+			search = 1;
+		}
+	}
+	if(search == 0) {
+		printf("Invalid value!\n");
+	}
+}
 
 int main(){
 	//---KhaiBao---
@@ -72,8 +90,8 @@ int main(){
 	do {
 	printf("********ProVip9000ProgramDesignedByNghiaHoangPhu*********\n");
 	printf("*\t\t1: Add new element.\t\t\t*\n");
-	printf("*\t\t2: display array.\t\t\t*\n");
-	printf("*\t\t3: searching element in array.\t\t*\n");
+	printf("*\t\t2: Display array.\t\t\t*\n");
+	printf("*\t\t3: Searching element in array.\t\t*\n");
 	printf("*\t\t4: Delete value in array.\t\t*\n");
 	printf("*\t\t5: Delete element at index.\t\t*\n");
 	printf("*\t\t6: Delete some elements in range.\t*\n");
@@ -98,6 +116,7 @@ int main(){
 		output(a, n);
 		break;
 		case 3:
+		search(a, n);
 		break;
 		case 4:
 		break;
